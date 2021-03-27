@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.mainContainer {
+    width: 40%;
+    background-color: rgb(153, 50, 204);
+    margin: auto;
+    box-shadow: 0px 0px 50px rgba(153, 50, 204, 0.493);
+    padding: 80px;
+    min-height: 100vh;
+}
+
+.display {
+    width: 330px;
+    margin: auto;
+    /* border: 5px solid hsl(328, 100%, 84%); */
+    padding: 20px;
+    box-shadow: 0px 0px 50px rgba(153, 50, 204, 0.493);
+}
+
+.inputLine {
+    background: transparent;
+    width: 100%;
+    font-size: 1em;
+    text-align: right;
+    color: white;
+    border: none;
+    outline: none;
+    /* pointer-events: none; */
+}
+
+.outputLine {
+    background: transparent;
+    width: 100%;
+    font-size: 2em;
+    text-align: right;
+    color: greenyellow;
+    border: none;
+    outline: none;
+    pointer-events: none;
+}
+
+.outputLine::placeholder {
+    color: azure;
+    font-size: 15px;
+}
+
+table {
+    width: 330px;
+    margin: auto;
+    text-align: center;
+    /* background: hsla(280, 61%, 40%); */
+    padding: 20px;
+}
+
+button {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.action {
+    background-color: greenyellow;
+    font-weight: 700;
+    color: rgb(146, 37, 173);
+    font-size: 16px;
+}
+
+.equal {
+    background-color: darkorange;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+@media only screen and (max-width:500px) {
+    .mainContainer {
+        min-width: 330px;
+        padding: 0px;
+        padding-top: 50px;
+    }
+    /* .display {
+        transform: scale(0.9);
+    }
+    table {
+        transform: scale(0.9);
+    } */
+}
+
+@media only screen and (max-width:300px) {
+    .display {
+        transform: scale(0.6);
+    }
+    table {
+        transform: scale(0.6);
+    }
+}
