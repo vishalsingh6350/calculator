@@ -50,6 +50,7 @@ body {
 .outputLine::placeholder {
     color: azure;
     font-size: 15px;
+    opacity: 0.7;
 }
 
 table {
